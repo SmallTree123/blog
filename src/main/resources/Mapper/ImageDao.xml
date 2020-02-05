@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.nylgsc.blog.Dao.ImageDao">
+
+    <select id="getImage" resultType="top.nylgsc.blog.entity.Image">
+        select * from images;
+    </select>
+
+    <insert id="insertImage" parameterType="String">
+        insert into images values (2,"宿崇",#{image});
+    </insert>
+
+
+</mapper>

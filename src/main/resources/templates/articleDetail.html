@@ -1,0 +1,83 @@
+<!doctype html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>文章详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/blogIndex/css/base.css" rel="stylesheet">
+    <link href="../static/blogIndex/css/index.css" rel="stylesheet">
+    <link href="../static/blogIndex/css/m.css" rel="stylesheet">
+    <script src="../static/blogIndex/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../static/blogIndex/js/jquery.easyfader.min.js"></script>
+    <script src="../static/blogIndex/js/scrollReveal.js"></script>
+    <script src="../static/blogIndex/js/common.js"></script>
+    <link rel="stylesheet" href="../static/layui/css/layui.css"  media="all">
+</head>
+<body>
+<header th:include="CodeModule :: header"></header>
+<div class="pagebg sh"></div>
+<div class="container">
+    <h1 class="t_nav"><span></span><a href="/blog/index" class="n1">网站首页</a><a href="#" class="n2">文章详情</a></h1>
+    <div class="blogtitle" style="width: 800px;height: 50px;">
+        <h1 style="color: #ff4a14">别让这些闹心的套路，毁了你的网页设计!</h1>
+    </div>
+    <div class="news_infos">
+        <span class="blogpic"><a href="/" title=""><img src="../static/blogIndex/images/toppic01.jpg" alt=""></a></span>
+        <ul>
+
+            <p>如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if 来判断，输出。思路已打开，样式调用就可以多样化啦！...
+                如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if 来判断，输出。思路已打开，样式调用就可以多样化啦！...
+                如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if 来判断，输出。思路已打开，样式调用就可以多样化啦！...
+                如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if 来判断，输出。思路已打开，样式调用就可以多样化啦！...
+                如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if 来判断，输出。思路已打开，样式调用就可以多样化啦！... </p>
+            <br />
+        </ul>
+
+        <hr class="layui-bg-green">
+        <div th:replace="CodeModule :: comment" ></div>
+
+        <div class="layui-bg-green" style="height: 35px">所有评论</div>
+
+        <div style="margin-left: 40px;margin-bottom: 40px;margin-top: 20px;height: 80px">
+            <img src="../static/blog.jpg" alt="" style="width: 50px;height: 50px;border-radius:50%;">
+            <span style="color: #00A7EB">&nbsp;宿崇 &nbsp;&nbsp;&nbsp;2个小时前</span><br>
+            sdasdasdasdas
+
+
+        </div>
+        <div style="padding-bottom: 20px;text-align: right;margin-right: 20px">
+            <i class="layui-icon layui-icon-reply-fill" style="font-size: 17px; color:#d2d2d2">回复</i>
+        </div>
+        <hr class="layui-bg-green">
+
+        <div style="margin-left: 40px;margin-bottom: 40px;margin-top: 20px;height: 80px">
+            <img src="../static/blog.jpg" alt="" style="width: 50px;height: 50px;border-radius:50%;">
+            <span style="color: #00A7EB">&nbsp;宿崇 &nbsp;&nbsp;&nbsp;2个小时前</span><br>
+            sdasdasdasdas
+
+
+        </div>
+        <div style="padding-bottom: 20px;text-align: right;margin-right: 20px">
+            <i class="layui-icon layui-icon-reply-fill" style="font-size: 17px; color:#d2d2d2">回复</i>
+        </div>
+        <hr class="layui-bg-green">
+
+        <div style="margin-left: 40px;margin-bottom: 40px;margin-top: 20px;height: 80px">
+            <img src="../static/blog.jpg" alt="" style="width: 50px;height: 50px;border-radius:50%;">
+            <span style="color: #00A7EB">&nbsp;宿崇 &nbsp;&nbsp;&nbsp;2个小时前</span><br>
+            sdasdasdasdas
+
+
+        </div>
+        <div style="padding-bottom: 20px;text-align: right;margin-right: 20px">
+            <i class="layui-icon layui-icon-reply-fill" style="font-size: 17px; color:#d2d2d2">回复</i>
+        </div>
+    </div>
+
+
+    <div th:replace="CodeModule :: right"></div>
+</div>
+<footer th:replace="CodeModule :: myfooter"></footer>
+<a href="#" class="cd-top">Top</a>
+</body>
+</html>
